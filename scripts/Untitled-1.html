@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Calculo Salario Liquido</title>
+</head>
+<body>
+<form onsubmit="calc();">
+<label>Informe seu salario</label>
+<input type="text" id="sal" />
+<input type="submit" value="calcular" />
+</form>
+</body>
+<script type="text/javascript">
+var calc = function(){
+	var sal = document.getElementById("sal").value; // pegamos o valor que digitamos no input
+	var inss = (8/100) * sal; // calculamos o desconto do inss
+	var ir_init = sal - inss; // aqui é o nosso salario já com o desconto do inss
+
+
+	if(ir_init <= 1499.15){
+		alert("Seu salario liquido é:" + ir_init);
+		alert("O desconto do inss é:" + inss);
+		alert("Seu salario é menor ou igual a R$1499,15. Portanto não possui deduções de IR");
+	}
+
+	if(ir_init >= 1499.16 && ir_init <= 2246.75){
+		var ir_final = (7.5/100) * ir_init;
+		var sal_final = ir_init - ir_final;
+
+		alert("Seu salario liquido é:" + sal_final);
+		alert("O desconto do inss é:" + inss);
+		alert("O desconto do IR é:" + ir_final);
+	}
+
+	if(ir_init >= 2246.76  && ir_init <= 2995.70){
+		var ir_final = (15/100) * ir_init;
+		var sal_final = ir_init - ir_final;
+
+		alert("Seu salario liquido é:" + sal_final);
+		alert("O desconto do inss é:" + inss);
+		alert("O desconto do IR é:" + ir_final);
+	}
+
+	if(ir_init >= 2995.71 && ir_init <= 3743.19){
+		var ir_final = (22.5/100) * ir_init;
+		var sal_final = ir_init - ir_final;
+
+		alert("Seu salario liquido é:" + sal_final);
+		alert("O desconto do inss é:" + inss);
+		alert("O desconto do IR é:" + ir_final);
+	}
+
+	if(ir_init >= 3473.0 ){
+		var ir_final = (27.5/100) * ir_init;
+		var sal_final = ir_init - ir_final;
+
+		alert("Seu salario liquido é:" + sal_final);
+		alert("O desconto do inss é:" + inss);
+		alert("O desconto do IR é:" + ir_final);
+	}
+
+};
+</script>
+</html>

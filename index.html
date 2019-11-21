@@ -1,0 +1,32 @@
+
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href = "./css/style.css">
+		<title>Impostos Receita Federal</title>
+	</head>
+
+	<body>
+		<header>
+			<div id="receita">
+				<img src="images/receitafederal.png" alt="Logo dos bandidos"/>
+			</div>
+			<div id="titulo">
+				<p>Receita Federal</p>
+			</div>
+		</header>
+		<main>
+			<form id="pegadados" method="get">
+				<input type="text" name="nome" id="nome" placeholder="Digite seu nome completo..." autocomplete="off"/><br>
+				<input type="number" name="salario" id="salariobruto" placeholder="Digite seu salário bruto..." autocomplete="off"/><br>
+				<button id="botaocalcular">Calcular impostos</button>
+			</form>
+			<div id="resultado"></div>
+		</main>
+
+		<script src="./scripts/app.js"></script>
+	</body>
+
+</html>

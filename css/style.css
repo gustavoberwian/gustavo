@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 768px){
+
+body{
+    background-color: #003771;
+}
+
+#receita{
+    width: 80%;
+}
+
+#receita img{
+    width: 70%;
+    position: relative;
+    left: 28%;
+    top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titulo p{
+    width: 100%;
+    color: white;
+    font-family: arial;
+    font-size: 170%;
+    text-align: center;
+    position: relative;
+    top: 9vw;
+}
+
+#nome{
+    position: relative;
+    top: 15vw;
+    left: 28%;
+    border-radius: 10px;
+    width: 47%;
+    height: 10%;
+    box-shadow: 2px 2px 7px;
+}
+
+#salariobruto{
+    position: relative;
+    top: 20vw;
+    left: 28%;
+    border-radius: 10px;
+    width: 47%;
+    height: 10%;
+    box-shadow: 2px 2px 7px;
+}
+
+#botaocalcular{
+    border-radius: 10px;
+    width: 47%;
+    height: 10%;
+    box-shadow: 2px 2px 7px;
+    position: relative;
+    top: 24vw;
+    left: 28%;
+}
+
+#resultado{
+    position: relative;
+    top: 30vw;
+    font-size: 60%;
+    background-color: white;
+    width: 70%;
+    left: 15%;
+    border-radius: 2px;
+    border-color: black;
+    border: 7px;
+}
+
+}
+
+@media only screen and (min-width: 769px){
+body{
+    background-color: #003771;
+    min-height: 100vw;
+}
+
+#receita{
+    width: 60%;
+}
+
+#receita img{
+    width: 60%;
+    position: relative;
+    left: 53%;
+    top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titulo p{
+    width: 100%;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 380%;
+    text-align: center;
+    position: relative;
+    top: 7vw;
+}
+
+#nome{
+    position: relative;
+    top: 15vw;
+    left: 23%;
+    border-radius: 10px;
+    width: 55%;
+    height: 8%;
+    box-shadow: 2px 2px 7px;
+    font-size: 105%;
+}
+
+#salariobruto{
+    position: relative;
+    top: 20vw;
+    left: 23%;
+    border-radius: 10px;
+    width: 55%;
+    height: 8%;
+    box-shadow: 2px 2px 7px;
+    font-size: 105%;
+}
+
+#botaocalcular{
+    border-radius: 10px;
+    width: 20%;
+    height: 8%;
+    box-shadow: 2px 2px 7px;
+    position: relative;
+    top: 25vw;
+    left: 58%;
+    border: 0px;
+    font-size: 140%;;
+}
+
+#botaolimpar{
+    border-radius: 10px;
+    width: 20%;
+    height: 8%;
+    box-shadow: 2px 2px 7px;
+    position: relative;
+    top: 25vw;
+    left: 2.5%;
+    border: 0px;
+    font-size: 140%;;
+}
+
+#resultado{
+    position: relative;
+    top: 30vw;
+    font-size: 90%;
+    background-color: white;
+    width: 80%;
+    left: 10%;
+}
+
+}
